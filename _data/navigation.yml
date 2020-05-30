@@ -1,0 +1,9 @@
+main:
+- title: "words"
+  url: /words/
+- title: "snapshots"
+  url: /snapshots/
+- title: "codes"
+  url: /codes/
+- title: "about"
+  url: /about/

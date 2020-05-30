@@ -1,0 +1,377 @@
+/**
+ * Site header
+ */
+.site-header {
+  
+  min-height: $spacing-unit * 1.865;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+  
+}
+
+.site-title {
+  //@include relative-font-size(1.625);
+
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 30px;
+  top: 10px;
+
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+
+  color: black;
+
+  &,
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+
+}
+
+.site-contacts {
+  position: absolute;
+  float: right;
+  right: 30px;
+  top: 10px;
+  
+}
+.social-media-list  {
+  margin: 50;
+  padding: 0;
+  
+}
+.social-media-list li {
+  &:not(:last-child) {
+    padding-right: 0;
+  }
+  padding-left: 10px;
+  display: inline-block;
+  
+  width: 30px;
+  height: 30px;
+  border: 0px solid transparent;
+}
+
+.homepage {
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.homepage-main-text {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 165px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  
+}
+
+/*.site-nav {
+  float: ;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}*/
+.site-nav{
+  position: relative;
+  margin-top: -40px;
+  margin-left: -10px;
+  padding: 0;
+  color: black;
+  
+}
+
+.site-nav li{
+  &:not(:last-child) {
+    padding-right: 0;
+  }
+  padding-left: 50px;
+  display: inline-block;
+  height: 54px;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
+.site-nav li a{ 
+  color: black;
+  &,
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+}
+
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+}
+
+.footer-heading {
+  @include relative-font-size(1.125);
+  margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list
+ {
+  display: inline;
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+  width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+@include media-query($on-palm) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  padding: $spacing-unit 0;
+  flex: 1;
+}
+
+.page-heading {
+  @include relative-font-size(2);
+}
+.post-list{
+  display: inline-block;
+  list-style: none;
+  min-width: 400px;
+  max-width: 400px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.post-list li{
+  
+  &:not(:last-child) {
+    padding-bottom: 0;
+  }
+  padding-top: 40px;
+}
+.post-list-heading {
+  
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.post-list-meta {
+  padding-top: 5px;
+  font-family: Calibri;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+display: block;
+align-items: center;
+text-align: right;
+
+color: #787878;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.page-title {
+  // position: fixed;
+  left: 50%;
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
