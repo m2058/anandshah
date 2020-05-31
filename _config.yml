@@ -38,7 +38,7 @@ plugins:
 
 
 include:
-  - assets
+  - _assets
   - _pages
   - _snapshots
   - _codes
