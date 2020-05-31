@@ -1,5 +1,5 @@
 <ul class="social-media-list" >
-  {%- if site.data.usernames.dribbble -%}     <li ><a href="https://dribbble.com/{{ site.data.usernames.dribbble| cgi_escape | escape }}">                                <svg class="svg-icon"><use xlink:href="{{ '/assets/icon-dribbble.svg' | relative_url }}"></use></svg> </a></li>{%- endif -%}
+  {%- if site.data.usernames.dribbble -%}     <li ><a href="https://dribbble.com/{{ site.data.usernames.dribbble| cgi_escape | escape }}">                                <img src="{{ '/assets/icon-dribbble.svg' | relative_url }}"></img> </a></li>{%- endif -%}
   {%- if site.data.usernames.facebook -%}     <li ><a href="https://facebook.com/{{ site.data.usernames.facebook| cgi_escape | escape }}">                                <img src="site.assets/icon-facebook.svg"></img> </a></li>{%- endif -%}
   {%- if site.data.usernames.flickr -%}       <li ><a href="https://flickr.com/photos/{{ site.data.usernames.flickr| cgi_escape | escape }}">                             <img src="site.assets/icon-flickr.svg"></img> </a></li>{%- endif -%}
   {%- if site.data.usernames.instagram -%}    <li ><a href="https://instagram.com/{{ site.data.usernames.instagram| cgi_escape | escape }}">                              <img src="/assets/icon-instagram.svg"></img> </a></li>{%- endif -%}
