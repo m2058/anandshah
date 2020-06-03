@@ -19,7 +19,7 @@
   left: 30px;
   top: 10px;
 
-  font-family: Calibri;
+  font-family: $base-font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -73,7 +73,7 @@
   transform: translate(-50%, -50%);
 }
 .homepage-main-text {
-  font-family: Calibri;
+  font-family: $base-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 120px;
@@ -85,74 +85,6 @@
   
 }
 
-/*.site-nav {
-  float: ;
-  line-height: $base-line-height * $base-font-size * 2.25;
-
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
-    }
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        fill: $grey-color-dark;
-      }
-    }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
-  }
-}*/
 .site-nav{
   position: relative;
   margin-top: -40px;
@@ -169,7 +101,7 @@
   padding-left: 50px;
   display: inline-block;
   height: 54px;
-  font-family: Calibri;
+  font-family: $base-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -193,8 +125,6 @@
   }
 
 }
-
-
 
 
 /**
@@ -279,6 +209,9 @@
 .page-heading {
   @include relative-font-size(2);
 }
+/*
+posts-gallery
+*/
 .post-list{
   display: inline-block;
   list-style: none;
@@ -297,7 +230,7 @@
 }
 .post-list-heading {
   
-  font-family: Calibri;
+  font-family: $base-font-family;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -307,24 +240,24 @@
 
 .post-list-meta {
   padding-top: 5px;
-  font-family: Calibri;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 20px;
-display: block;
-align-items: center;
-text-align: right;
-
-color: #787878;
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+  align-items: center;
+  text-align: right;
+  color: #787878;
 }
 
 .post-link {
-  display: block;
-  @include relative-font-size(1.5);
+  &:hover {
+    text-decoration: none;
+    
+  }
+  
 }
-
-
 
 /**
  * Posts
@@ -336,7 +269,7 @@ color: #787878;
 .page-title {
   // position: fixed;
   left: 50%;
-  font-family: Calibri;
+  font-family: $base-font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -374,4 +307,48 @@ color: #787878;
       @include relative-font-size(1.125);
     }
   }
+  
+
 }
+
+
+//snapshots gallery
+
+.image-gallery{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap; 
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-around;
+
+}
+
+.image-container {
+  margin: 35px;
+  width: 300px;
+  height: 260px;
+  
+}
+
+.image-container img {
+  width: 300px;
+  height: 210px;
+  object-fit: cover;
+  
+}
+
+.image-title {
+  padding: 10px 15px 0px 0px;
+  text-align: left;
+  height: 50px;
+  color: white;
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+//codes-gallery
+
+//about-page

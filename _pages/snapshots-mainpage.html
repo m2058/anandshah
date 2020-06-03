@@ -1,6 +1,23 @@
 ---
 layout: default
-title: snapshots
+title: Snapshots
 permalink: /snapshots/
 ---
-{%- include page_title.html -%}
+<div>
+
+  {%- include page_title.html -%}
+  
+  <div class="image-gallery">
+    {%- for snapshots-feed in site.snapshots-feed -%}
+
+      <div class="image-container">
+        <a target="_blank" href="/assets/snapshot-assets/{{snapshots-feed.file-name}}{{relative_url}}">
+          <img src="/assets/snapshot-assets/{{snapshots-feed.file-name | escape }}{{relative_url}}" alt="{{snapshots-feed.title}}" >
+        </a>
+        <div class="image-title">{{snapshots-feed.title | escape}}</div>
+      </div>
+
+    {%- endfor -%}
+  </div>
+  
+</div>

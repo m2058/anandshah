@@ -39,8 +39,14 @@ plugins:
 
 include:
   - _pages
-  - _snapshots
+  - _snapshots-feed
   - _codes
+
+collections:
+  snapshots-feed:
+    output: true
+  codes-feed:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

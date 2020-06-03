@@ -3,4 +3,20 @@ layout: default
 title: Codes
 permalink: /codes/
 ---
-{%- include page_title.html -%}
+<div>
+
+  {%- include page_title.html -%}
+
+  <div>  
+                 
+    <ul class="post-list">
+      {%- for codes-feed in site.codes-feed -%}
+        <li >           
+            {{codes-feed.title}}           
+        </li>
+      {%- endfor -%}
+    </ul>            
+    
+  </div>
+  
+</div>
