@@ -351,4 +351,87 @@ posts-gallery
 
 //codes-gallery
 
+.codes-feed-list{
+  display: block;
+  list-style: none;
+  width: 85%;
+  margin: 0 auto;
+ 
+}
+.codes-feed-list li{
+  
+  &:not(:last-child) {
+    padding-bottom: 0;
+  }
+  padding-top: 40px;
+  
+
+}
+.codes-feed-holder{
+  display: inline-flex;
+  width: 100%;
+  
+}
+.codes-feed-list-meta{
+  max-height: 150px;
+  max-width: 67%;
+
+}
+.codes-feed-list-heading {
+  
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  color: #000000;
+  
+}
+
+.codes-feed-list-description {
+  
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: justify;
+  
+  color: #787878;
+  width: 100%;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+ 
+}
+
+.codes-feed-list-thumbnail{
+  width: 280px;
+  height: 150px;
+  margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.codes-feed-list-thumbnail-img-1{
+  width: 280px;
+  height: 150px;
+  object-fit: fill;
+  
+}
+.codes-feed-list-thumbnail-img-2{
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+}
+.codes-feed-list-thumbnail-img-3{
+  width: 70px;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
 //about-page

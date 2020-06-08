@@ -7,12 +7,41 @@ permalink: /codes/
 
   {%- include page_title.html -%}
 
-  <div>  
+  <div >  
                  
-    <ul class="post-list">
+    <ul class="codes-feed-list">
       {%- for codes-feed in site.codes-feed -%}
-        <li >           
-            {{codes-feed.title}}           
+        <li >
+          <a>
+            <div class="codes-feed-holder">
+              <div class="codes-feed-list-thumbnail">
+                {%- if codes-feed.screenshot-url3 -%}
+                  <img class="codes-feed-list-thumbnail-img-3" src="{{codes-feed.screenshot-url1 | relative_url}}" alt="{{codes-feed.title}}" >
+                  <img class="codes-feed-list-thumbnail-img-3" src="{{codes-feed.screenshot-url2 | relative_url}}" alt="{{codes-feed.title}}" >
+                  <img class="codes-feed-list-thumbnail-img-3" src="{{codes-feed.screenshot-url3 | relative_url}}" alt="{{codes-feed.title}}" >
+                  
+                {%- elsif codes-feed.screenshot-url2 -%}
+                    <img class="codes-feed-list-thumbnail-img-2" src="{{codes-feed.screenshot-url1 | relative_url}}" alt="{{codes-feed.title}}" >
+                    <img class="codes-feed-list-thumbnail-img-2" src="{{codes-feed.screenshot-url2 | relative_url}}" alt="{{codes-feed.title}}" >
+                  
+                {%- elsif codes-feed.screenshot-url1 -%}
+                      <img class="codes-feed-list-thumbnail-img-1" src="{{codes-feed.screenshot-url1 | relative_url}}" alt="{{codes-feed.title}}" >
+                {%- endif -%}
+                  
+              </div>
+              <div class="codes-feed-list-meta">
+              <div class="codes-feed-list-heading">
+                {{ codes-feed.title | escape }}
+              </div>
+                
+              <div class="codes-feed-list-description">
+               {{ codes-feed.description | escape }}      
+              </div>
+              </div>     
+            </div>
+           
+          </a>           
+                       
         </li>
       {%- endfor -%}
     </ul>            
