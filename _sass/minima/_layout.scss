@@ -21,7 +21,7 @@
 
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   font-size: 45px;
   line-height: 60px;
   display: flex;
@@ -75,7 +75,7 @@
 .homepage-main-text {
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $base-font-weight;
   font-size: 120px;
   line-height: 165px;
   display: flex;
@@ -98,12 +98,12 @@
   &:not(:last-child) {
     padding-right: 0;
   }
-  padding-left: 50px;
+  padding-left: 60px;
   display: inline-block;
   height: 54px;
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $base-font-weight;
   font-size: 30px;
   line-height: 40px;
 
@@ -232,7 +232,7 @@ posts-gallery
   
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: bold;
+  font-weight: $base-font-weight;
   font-size: 30px;
   line-height: 40px;
   color: #000000;
@@ -242,7 +242,7 @@ posts-gallery
   padding-top: 5px;
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $base-font-weight;
   font-size: 15px;
   line-height: 20px;
   display: block;
@@ -271,7 +271,7 @@ posts-gallery
   left: 50%;
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   font-size: 40px;
   line-height: 54px;
 
@@ -345,7 +345,7 @@ posts-gallery
   color: white;
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   font-size: 20px;
 }
 
@@ -381,7 +381,7 @@ posts-gallery
   
   font-family: $base-font-family;
   font-style: normal;
-  font-weight: bold;
+  font-weight: $base-font-weight;
   font-size: 26px;
   line-height: 40px;
   color: #000000;
