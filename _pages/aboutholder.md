@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-with-wrapper
 title: About
 permalink: /about/
 ---

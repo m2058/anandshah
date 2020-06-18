@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Learn Your Animal Nature/Snap"
 date:   2020-05-30 11:18:21 +0545
 ---
